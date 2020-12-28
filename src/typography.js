@@ -35,9 +35,10 @@ const typography = new Typography({
     },
 
     'h4': {
-      letterSpacing: '0.25em',
+      fontFamily: "Operator",
+      letterSpacing: '0.15em',
       textTransform: 'uppercase',
-      fontWeight: 300,
+      fontWeight: 400,
       fontSize: '0.8em',
       margin: '1rem 0',
       lineHeight: '1.5em'

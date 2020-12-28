@@ -45,6 +45,15 @@ const StyledH4 = styled.h4`
   margin-top: .5rem;
 `
 
+const StyledHint = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.85em;
+  font-weight: 500;
+`
+
 const HeroSection = () => {
   return (
     <StyledSection>
@@ -54,6 +63,7 @@ const HeroSection = () => {
         <StyledH2>mental fitness for womxn</StyledH2>
         <StyledH4>Focused heart,<br/>Strong mind</StyledH4>
       </StyledDiv>
+      <StyledHint><h4>Play ↑ here</h4></StyledHint>
     </StyledSection>
   )
 }

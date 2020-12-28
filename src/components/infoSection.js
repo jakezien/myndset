@@ -15,7 +15,7 @@ const StyledSection = styled.section`
 
 const StyledDiv = styled.div`
   max-width: ${rhythm(24)};
-  margin: 0 auto 2rem auto;
+  margin: 3em auto 2rem auto;
 `
 const StyledH2 = styled.h2`
   max-width: 75%;
@@ -26,10 +26,19 @@ const StyledSpan = styled.span`
   top: 0.15em;
   letter-spacing:-0.07em;
 `
+const StyledHint = styled.div`
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.85em;
+  font-weight: 500;
+`
 
 const InfoSection = () => {
   return (
     <StyledSection>
+      <StyledHint><h4>Scroll ↓ here</h4></StyledHint>
       <StyledDiv>
         <StyledH2>Why don’t we give the same attention to our mind as we do to our body?
           <br/>
