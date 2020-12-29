@@ -50,7 +50,7 @@ const Scene = () => {
   const [scene, setScene] = useState()
 
 
-   const handleResize = () => {
+  const handleResize = () => {
     setContraints(boxRef.current.getBoundingClientRect())
   }
 
@@ -133,8 +133,7 @@ const Scene = () => {
       let randomAngle = Math.random() * Math.PI * 2
       let randomRadius = Math.random() * Math.hypot(w, h)
 
-      let projectedInnerRadiusPoint = projectFromPoint(center, randomAngle, emptyRadius)
-      let projectedPoint = projectFromPoint(projectedInnerRadiusPoint, randomAngle, randomRadius)
+      let projectedPoint = projectFromPoint(center, randomAngle, emptyRadius + randomRadius)
       let randomParticle = createParticle(projectedPoint)
 
       return randomParticle

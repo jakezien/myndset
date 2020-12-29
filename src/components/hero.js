@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 // import { Link } from "gatsby"
-import Scene from "../Scene"
+import Scene from "../Scene2"
 
 
 const StyledSection = styled.section`
@@ -56,16 +56,20 @@ const StyledHint = styled.div`
 
 const HeroSection = () => {
   return (
-    <StyledSection>
-      <Scene/>
-      <StyledDiv>
-        <StyledH1>Myndy</StyledH1>
-        <StyledH2>mental fitness for womxn</StyledH2>
-        <StyledH4>Focused heart,<br/>Strong mind</StyledH4>
-      </StyledDiv>
-      <StyledHint><h4>Play ↑ here</h4></StyledHint>
-    </StyledSection>
+    <Scene/>
   )
+
+    // <StyledSection>
+    //   <Scene/>
+    //   <StyledDiv>
+    //     <StyledH1>Myndy</StyledH1>
+    //     <StyledH2>mental fitness for womxn</StyledH2>
+    //     <StyledH4>Focused heart,<br/>Strong mind</StyledH4>
+    //   </StyledDiv>
+    //   <StyledHint><h4>Play ↑ here</h4></StyledHint>
+    // </StyledSection>
+
+  
 }
 
 export default HeroSection;
