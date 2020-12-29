@@ -5,7 +5,7 @@ import Matter from "matter-js"
 import MatterAttractors from "matter-attractors"
 import Colors from "./colors"
 
-const PARTICLE_RADIUS = 2
+const PARTICLE_RADIUS = 4
 
 const Scene = () => {
 
@@ -30,7 +30,7 @@ const Scene = () => {
       world = engine.world;
 
   // customize world
-  world.gravity.scale = 0;
+  world.gravity.scale = .0001;
 
 
   // create renderer
@@ -61,13 +61,13 @@ const Scene = () => {
   );
 
   // add bodies
-  // Matter.Composites.stack(x, y, columns, rows, columnGap, rowGap, callback)
-  var stack = Composites.stack(0, 0, 320, 218, 0, 0, (x, y) => {
-    return Bodies.circle(x, y, PARTICLE_RADIUS, { 
+  // Matter.Composites.stack(xx, yy, columns, rows, columnGap, rowGap, callback)
+  var stack = Composites.stack(100, 100, 100, 70, 1, 1, (x, y) => {
+    return Bodies.rectangle(x, y, PARTICLE_RADIUS, PARTICLE_RADIUS, { 
       friction: 0.1, 
-      restitution: 0.25, 
-      density: 0.01 
-    }, 6);
+      restitution: 0.1, 
+      density: 0.1, 
+    });
   });
 
   World.add(world, stack);
