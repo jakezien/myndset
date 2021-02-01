@@ -207,7 +207,7 @@ const Scene = () => {
       console.log('CREATE RANDOM PARTICLE')
     }
     World.add(world, particles);
-    console.log('WORLD ADD PARTICLES')
+    console.log('WORLD ADD PARTICLES', particles.length)
     
 
 
@@ -219,6 +219,8 @@ const Scene = () => {
       const { min, max } = heart.bounds
       let w = max.x - min.x
       let h = max.y - min.y
+
+      console.log(engine.world.bodies.length, 'bodies')
 
       Body.translate(heart, {
         x: (render.options.width/2 - heart.position.x + w * 0.033) * 0.25,

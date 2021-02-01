@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 // import { Link } from "gatsby"
-import Scene from "../Scene2"
+import Scene from "../scene"
 
 
 const StyledSection = styled.section`
